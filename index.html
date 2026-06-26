@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mohamed Atef — UI/UX Designer, Graphic Designer & Programmer. Portfolio showcasing design projects, skills, and services.">
+  <meta name="keywords" content="UI/UX Designer, Graphic Designer, Programmer, Mohamed Atef, Portfolio">
+  <meta name="author" content="Mohamed Atef">
+  <title>Mohamed Atef | UI/UX Designer Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== LOADING ANIMATION ========== -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <div class="loader-ring loader-ring-2"></div>
+      <p class="loader-text">Mohamed Atef</p>
+      <p class="loader-subtext">Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <!-- ========== CUSTOM CURSOR ========== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <!-- ========== FLOATING PARTICLES ========== -->
+  <div class="particles" id="particles" aria-hidden="true"></div>
+
+  <!-- ========== FIXED NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">MA<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== SECTION 1: HERO / HOMEPAGE ========== -->
+    <section class="hero section" id="home">
+      <div class="hero-bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal-left">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-title">Mohamed Atef</h1>
+          <p class="hero-subtitle">UI/UX Designer | Graphic Designer | Programmer</p>
+          <p class="hero-bio">"I turn complex user needs into clean, purposeful designs that people actually enjoy using."</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <!-- <a href="#" class="btn btn-outline">
+              <span>View CV</span>
+              <i class="fas fa-file-alt"></i>
+            </a> -->
+          </div>
+        </div>
+        <div class="hero-image reveal-right">
+          <div class="image-frame">
+            <div class="frame-ring frame-ring-1"></div>
+            <div class="frame-ring frame-ring-2"></div>
+            <div class="frame-inner">
+              <!-- Add Personal Image Here -->
+              <img src="assats/atef.jpg" alt="Mohamed Atef" class="profile-img" style="transform: translateY(-65px) scale(1.13);">
+              </div>
+            </div>
+            <div class="floating-icon floating-icon-1"><i class="fas fa-palette"></i></div>
+            <div class="floating-icon floating-icon-2"><i class="fas fa-code"></i></div>
+            <div class="floating-icon floating-icon-3"><i class="fas fa-pen-nib"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 2: ABOUT ME ========== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get to know me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-card glass-card reveal">
+          <div class="about-icon">
+            <i class="fas fa-user-circle"></i>
+          </div>
+          <p class="about-text">
+            My name is Mohamed Atef. I am a UI/UX Designer with 1 year of experience creating user-centered digital experiences. I have worked on multiple projects including mobile applications and websites. My passion is transforming ideas into intuitive and visually appealing interfaces that solve real user problems while delivering outstanding user experiences.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 3: EDUCATION ========== -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">My Journey</span>
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <h3>Faculty of Computers and Information</h3>
+                <span class="timeline-badge">Good</span>
+              </div>
+              <p class="timeline-grade">Grade: Good</p>
+              <p class="timeline-desc">
+                Currently studying at the Faculty of Computers and Information, where I have developed strong analytical thinking, problem-solving abilities, software development knowledge, and user experience design skills through academic and practical projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 4: SKILLS & TOOLS ========== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What I Do Best</span>
+          <h2 class="section-title">Skills & Tools</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card glass-card reveal">
+            <div class="skill-icon">
+              <i class="fas fa-object-group"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Creating intuitive interfaces and seamless user experiences.</p>
+          </div>
+          <div class="skill-card glass-card reveal">
+            <div class="skill-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Graphic Design</h3>
+            <p>Crafting visually stunning graphics and brand identities.</p>
+          </div>
+          <div class="skill-card glass-card reveal">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Programming</h3>
+            <p>Building functional and responsive web applications.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 5: PROJECTS SHOWCASE ========== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">My Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass-card reveal">
+            <div class="project-image">
+            <img src="assats/3.png" alt="">              <div class="project-placeholder">
+                <i class="fas fa-image"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="https://www.figma.com/design/OTcxxplyAp3SCOZ2DMA2GC/nti?node-id=10-421&t=mW70FqVUoiKhTdcT-1" target="_blank" rel="noopener noreferrer" class="project-figma-btn" aria-label="View Project 1 on Figma">
+                  <i class="fab fa-figma"></i>
+                  <span>View on Figma</span>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Project 1</h3>
+              <p>"Write Project Description Here"</p>
+              <a href="https://www.figma.com/design/OTcxxplyAp3SCOZ2DMA2GC/nti?node-id=10-421&t=mW70FqVUoiKhTdcT-1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <i class="fab fa-figma"></i>
+                <span>Figma Design</span>
+              </a>
+            </div>
+          </article>
+          <!-- Project 2 -->
+          <article class="project-card glass-card reveal">
+            <div class="project-image">
+          <img src="/assats/1.png" alt="">              <div class="project-placeholder">
+                <i class="fas fa-image"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="https://www.figma.com/design/OTcxxplyAp3SCOZ2DMA2GC/nti?node-id=99-5666&t=mW70FqVUoiKhTdcT-1" target="_blank" rel="noopener noreferrer" class="project-figma-btn" aria-label="View Project 2 on Figma">
+                  <i class="fab fa-figma"></i>
+                  <span>View on Figma</span>
+                </a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Project 2</h3>
+              <p>"Write Project Description Here"</p>
+              <a href="https://www.figma.com/design/OTcxxplyAp3SCOZ2DMA2GC/nti?node-id=99-5666&t=mW70FqVUoiKhTdcT-1" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                <i class="fab fa-figma"></i>
+                <span>Figma Design</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 6: TESTIMONIALS ========== -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Client Feedback</span>
+          <h2 class="section-title">Testimonials</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="carousel-wrapper reveal">
+          <div class="carousel-track" id="carouselTrack">
+            <div class="testimonial-card glass-card">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-text">"Professional designer with excellent attention to detail."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                <h4>Sarah Johnson</h4>
+              </div>
+            </div>
+            <div class="testimonial-card glass-card">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-text">"Delivered a beautiful and user-friendly design."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                <h4>Michael Brown</h4>
+              </div>
+            </div>
+            <div class="testimonial-card glass-card">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-text">"Highly recommended for UI/UX projects."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                <h4>Emma Wilson</h4>
+              </div>
+            </div>
+            <div class="testimonial-card glass-card">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-text">"Creative, responsive, and easy to work with."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                <h4>David Smith</h4>
+              </div>
+            </div>
+            <div class="testimonial-card glass-card">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="testimonial-text">"Outstanding design quality and communication."</p>
+              <div class="testimonial-author">
+                <div class="author-avatar"><i class="fas fa-user"></i></div>
+                <h4>Sophia Davis</h4>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 7: SERVICES ========== -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">What I Offer</span>
+          <h2 class="section-title">Services</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="services-grid">
+          <div class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fas fa-object-group"></i></div>
+            <h3>UI/UX Design</h3>
+          </div>
+          <div class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+            <h3>Graphic Design</h3>
+          </div>
+          <div class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fab fa-adobe"></i></div>
+            <h3>Adobe Photoshop</h3>
+          </div>
+          <div class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fas fa-palette"></i></div>
+            <h3>Canva Design</h3>
+          </div>
+          <div class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Web Design</h3>
+          </div>
+          <div class="service-card glass-card reveal">
+            <div class="service-icon"><i class="fas fa-drafting-compass"></i></div>
+            <h3>Wireframing & Prototyping</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 8: CONTACT ========== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Contact Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-grid">
+          <a href="tel:01015086425" class="contact-card glass-card reveal">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <h3>Phone</h3>
+            <p>01015086425</p>
+          </a>
+          <a href="https://www.facebook.com/share/1GZwMPt8Fo/" target="_blank" rel="noopener noreferrer" class="contact-card glass-card reveal">
+            <div class="contact-icon"><i class="fab fa-facebook-f"></i></div>
+            <h3>Facebook</h3>
+            <p>Connect on Facebook</p>
+          </a>
+          <a href="https://www.instagram.com/_mahamedatef_?igsh=dTB3MWY3MnhpbjFz" target="_blank" rel="noopener noreferrer" class="contact-card glass-card reveal">
+            <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+            <h3>Instagram</h3>
+            <p>Follow on Instagram</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Mohamed Atef. All Rights Reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/1GZwMPt8Fo/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/mahamedatef?igsh=dTB3MWY3MnhpbjFz" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="tel:01015086425" aria-label="Phone"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== SCROLL TO TOP ========== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
